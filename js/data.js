@@ -3,16 +3,7 @@ const downloadDatabase = [
     { model: "SAPH660", title: "SAPH660 User Manual (English)", type: "Manual", size: "2.4 MB", date: "2023-10-15", url: "#", os: "All" },
     { model: "SAPH660", title: "SAPH660 Windows Printer Driver", type: "Driver", size: "15.1 MB", date: "2024-01-20", url: "#", os: "Windows 10/11" },
     { model: "SAPH660", title: "SAPH660 Setup Utility", type: "Utility", size: "8.5 MB", date: "2023-11-05", url: "#", os: "Windows" },
-    
-    // SPT-7500 Data
-    { model: "SPT-7500", title: "SPT-7500 Hardware Manual", type: "Manual", size: "4.1 MB", date: "2022-08-11", url: "#", os: "All" },
-    { model: "SPT-7500", title: "SPT-7500 OPOS Driver", type: "Driver", size: "12.3 MB", date: "2023-05-30", url: "#", os: "Windows" },
-    { model: "SPT-7500", title: "System BIOS Update", type: "Firmware", size: "5.5 MB", date: "2023-09-12", url: "#", os: "DOS/Windows" },
-
-    // ER-900 Data
-    { model: "ER-900", title: "ER-900 Series Programming Manual", type: "Manual", size: "6.2 MB", date: "2021-12-01", url: "#", os: "All" },
-    { model: "ER-900", title: "PC Utility Software", type: "Utility", size: "22.0 MB", date: "2022-03-15", url: "#", os: "Windows 10" },
-    
+        
     // Giant-100 Data
     { model: "GIANT-100", title: "GIANT-100 Receipt Printer Manual", type: "Manual", size: "1.8 MB", date: "2023-02-28", url: "#", os: "All" },
     { model: "GIANT-100", title: "GIANT-100 Mac OS Driver", type: "Driver", size: "3.5 MB", date: "2023-07-10", url: "#", os: "macOS" },
