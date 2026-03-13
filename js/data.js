@@ -1,11 +1,10 @@
 const downloadDatabase = [
     // SAPH660 Data
-    { model: "SAPH660", title: "SAPH660 User Manual (English)", type: "Manual", size: "2.4 MB", date: "2023-10-15", url: "#", os: "All" },
-    { model: "SAPH660", title: "SAPH660 Windows Printer Driver", type: "Driver", size: "15.1 MB", date: "2024-01-20", url: "#", os: "Windows 10/11" },
-    { model: "SAPH660", title: "SAPH660 Setup Utility", type: "Utility", size: "8.5 MB", date: "2023-11-05", url: "#", os: "Windows" },
-        
-    // Giant-100 Data
-    { model: "GIANT-100", title: "GIANT-100 Receipt Printer Manual", type: "Manual", size: "1.8 MB", date: "2023-02-28", url: "#", os: "All" },
-    { model: "GIANT-100", title: "GIANT-100 Mac OS Driver", type: "Driver", size: "3.5 MB", date: "2023-07-10", url: "#", os: "macOS" },
-    { model: "GIANT-100", title: "GIANT-100 Linux CUPS Driver", type: "Driver", size: "2.1 MB", date: "2023-07-10", url: "#", os: "Linux" }
+    { model: "SAPH660", title: "Intel Chipset Device Software", type: "Driver", size: "4.48 MB", ver: "10.1.19376.8374", 
+     url: "https://www.dropbox.com/scl/fi/vxtrkssi2lupzwec4su3n/Chipset-10.1.19376.8374-Public-MUP.zip?rlkey=3cr1416bj03tekdbzvuy0q8zu&st=izkdr7j8&dl=0", os: "Win10/11" },
+    { model: "SAPH660", title: "Intel Grphics Driver", type: "Driver", size: "617 MB", ver: "101.4369", 
+     url: "https://www.dropbox.com/scl/fi/rcvfhsa5hsewghevhyp4l/gfx_win_101.4369.zip?rlkey=jxsbcucqmxrmzbu64f6wmvmpc&st=ihsy0awy&dl=0", os: "Win10" },
+    { model: "SAPH660", title: "Intel Grphics Driver", type: "Utility", size: "884 MB", ver: "101.5972", 
+     url: "https://www.dropbox.com/scl/fi/tvu5fpfznagi8pabg8xu7/gfx_win_101.5972.exe?rlkey=sds04irpvv0o7xe08azizrw08&st=0c40menb&dl=0", os: "Win11" },
+
 ];
