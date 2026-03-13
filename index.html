@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SAM4S Download Center</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="text-slate-800 antialiased min-h-screen flex flex-col">
+
+    <!-- Header -->
+    <header class="bg-white border-b border-slate-200 sticky top-0 z-10 shadow-sm">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <div class="flex items-center gap-2 cursor-pointer hover:opacity-80 transition-opacity">
+                    <div class="w-8 h-8 bg-blue-600 rounded-lg flex items-center justify-center text-white font-bold text-xl">S</div>
+                    <span class="font-bold text-xl tracking-tight text-slate-900">SAM4S <span class="text-blue-600 font-medium">Download Center</span></span>
+                </div>
+                <div class="hidden sm:flex text-sm font-medium text-slate-500 hover:text-slate-900 transition-colors cursor-pointer">Support Home</div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="flex-grow w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10 flex flex-col items-center">
+        <!-- Search Section -->
+        <div class="w-full max-w-3xl mb-12 text-center">
+            <h1 class="text-3xl sm:text-4xl font-bold text-slate-900 mb-4 tracking-tight">Find Software & Manuals</h1>
+            <p class="text-slate-500 mb-8 text-lg">Search for drivers, manuals, utilities, and firmware by model name.</p>
+            
+            <div class="relative group">
+                <div class="absolute inset-y-0 left-0 pl-4 flex items-center pointer-events-none">
+                    <i data-lucide="search" class="h-5 w-5 text-slate-400 group-hover:text-blue-500 transition-colors"></i>
+                </div>
+                <input type="text" id="searchInput" class="block w-full pl-11 pr-24 py-4 text-lg border border-slate-300 rounded-2xl bg-white shadow-sm placeholder:text-slate-400 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition-all duration-300 hover:shadow-md" placeholder="Enter a search term (e.g. SAPH660)">
+                <div class="absolute inset-y-0 right-2 flex items-center">
+                    <button id="searchBtn" class="bg-blue-600 hover:bg-blue-700 text-white px-6 py-2 rounded-xl font-medium transition-all duration-200 hover:shadow-lg active:transform active:scale-95">Search</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Results Section -->
+        <div class="w-full">
+            <div class="flex justify-between items-end mb-6 border-b border-slate-200 pb-2">
+                <h2 id="resultTitle" class="text-xl font-semibold text-slate-800">Available Downloads</h2>
+                <span id="resultCount" class="text-sm font-medium text-slate-500 bg-slate-100 px-3 py-1 rounded-full"></span>
+            </div>
+
+            <!-- Grid for Tiles -->
+            <div id="resultsGrid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5"></div>
+            
+            <!-- Empty State -->
+            <div id="emptyState" class="hidden flex-col items-center justify-center py-20 text-center">
+                <div class="bg-slate-100 p-6 rounded-full mb-4">
+                    <i data-lucide="file-question" class="h-12 w-12 text-slate-400"></i>
+                </div>
+                <h3 class="text-lg font-semibold text-slate-900 mb-1">No results found</h3>
+                <p class="text-slate-500">We couldn't find any downloads matching your search.<br>Please try a different model name.</p>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-white border-t border-slate-200 py-8 mt-auto">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center text-sm text-slate-500">
+            &copy; <span id="year"></span> SAM4S. All rights reserved.
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="js/data.js"></script>
+    <script src="js/app.js"></script>
+</body>
+</html>
